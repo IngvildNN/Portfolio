@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="min-w-full bg-[url('/public/footer-design.png')] text-imageBackground min-h-[10vh]  ">
-      <div className="mx-10 md:mx-44 xl:mx-96 flex-col justify-start ">
+      <div className="mx-10 md:mx-44 xl:mx-72 flex-col justify-start ">
         <p className="text-xl pt-6">Kontakt meg!</p>
         <p>email: ingvildnys@gmail.com</p>
         <p>linkedin</p>

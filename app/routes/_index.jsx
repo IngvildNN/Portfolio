@@ -22,7 +22,7 @@ export const meta = () => {
 export default function Index() {
   const { data } = useLoaderData();
   return (
-    <main className="mb-10 mx-10 md:mx-44 xl:mx-96">
+    <main className="mb-10 mx-10 md:mx-44 xl:mx-72">
       <div className="flex mt-8 md:justify-between md:w-full md:flex md:gap-20 md:items-center ">
         <img
           className="mix-blend-multiply max-h-24 md:min-h-40"

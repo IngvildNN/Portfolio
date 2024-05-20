@@ -38,6 +38,24 @@ export default defineType({
         hotspot: true,
       },
     }),
+    defineField({
+      name: 'pdfImage',
+      title: 'PDF image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'pdfLink',
+      title: 'PDFLink',
+      type: 'string',
+    }),
+    defineField({
+      name: 'behance',
+      title: 'Behance',
+      type: 'string',
+    }),
 
     defineField({
       name: 'body',
