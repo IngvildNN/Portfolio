@@ -20,3 +20,7 @@ h3 {
 p {
   font-size: 14px;
 }
+
+* {
+  font-family: "loos-normal", sans-serif;
+}

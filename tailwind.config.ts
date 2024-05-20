@@ -15,7 +15,7 @@ export default {
         "footer-texture": "url('/public/footer-design.png')",
       },
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
+        Loos: ["Loos", "sans-serif"],
       },
     },
   },
