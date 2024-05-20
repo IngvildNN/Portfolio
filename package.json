@@ -11,10 +11,16 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.18",
     "@remix-run/node": "^2.9.1",
     "@remix-run/react": "^2.9.1",
     "@remix-run/serve": "^2.9.1",
+    "@sanity/client": "^6.18.2",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/overlays": "^2.3.47",
+    "@sanity/react-loader": "^1.9.19",
     "autoprefixer": "^10.4.19",
+    "groq": "^3.42.1",
     "isbot": "^4.1.0",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
