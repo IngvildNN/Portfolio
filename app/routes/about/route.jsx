@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from "react";
 
 export default function About() {
@@ -9,9 +10,7 @@ export default function About() {
 
   return (
     <div className="max-w-full flex flex-col items-center mt-12 mx-10 md:mx-44 xl:mx-72 min-h-[100vh]">
-      <p className="text-xl md:text-2xl mt-4 text-center min-w-full">
-        Ingvild Netland Nystein
-      </p>
+      <h1 className=" mt-4 text-center min-w-full">Ingvild Netland Nystein</h1>
       <div className="md:flex md:justify-between md:items-center md:gap-4 md:min-w-full ">
         <div className="flex justify-center gap-4 items-center">
           <div className="flex flex-col gap-4">
@@ -45,18 +44,35 @@ export default function About() {
           <h2
             className={`font-normal mb-4 text-tertiary cursor-pointer justify-self-start ${
               visibleSection === "education" ? "text-black underline" : ""
+            } ${
+              visibleSection === "education" ? "text-black" : "text-tertiary"
             }`}
             onClick={() => toggleSection("education")}
+            // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+            tabIndex={0}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                toggleSection("education");
+              }
+            }}
           >
             Utdanning
           </h2>
         </div>
+
         <div className="flex justify-center w-[50%]">
           <h2
-            className={`font-normal text-tertiary flex justify-start cursor-pointer justify-self-end ${
+            className={`font-normal  flex justify-start cursor-pointer justify-self-end ${
               visibleSection === "hobbies" ? "text-black underline" : ""
-            }`}
+            } ${visibleSection === "hobbies" ? "text-black" : "text-tertiary"}`}
             onClick={() => toggleSection("hobbies")}
+            // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+            tabIndex={0}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                toggleSection("hobbies");
+              }
+            }}
           >
             Fritid
           </h2>
@@ -163,49 +179,122 @@ export default function About() {
       )}
 
       {visibleSection === "hobbies" && (
-        <section className="mb-4">
-          <p className="my-4">
+        <section className="mb-4 px-44 w-full  ">
+          <p className="my-4 lg:text-lg">
             På fritiden driver jeg med en rekke friluftsaktiviteter som
             randonée, slalom, klatring, buldring og tur.
           </p>
-          <div className="flex flex-wrap gap-2 ">
-            <img src="/skiiing.png" alt="" />
-            <img src="/alpene.png" alt="" />
-            <img src="/klatring.png" alt="" />
-            <img src="/Fjellet.png" alt="" />
+          <div className="flex flex-wrap gap-7 ">
+            <div className="flex flex-row justify-between gap-2 w-full">
+              <img
+                className="max-w-24 md:max-w-44 max-h-44  contain"
+                src="/skiiing.png"
+                alt=""
+              />
+              <img
+                className="max-w-24 md:max-w-44 max-h-44 contain"
+                src="/alpene.png"
+                alt=""
+              />
+            </div>
+            <div className="flex flex-row justify-between gap-2 w-full">
+              <img
+                className="max-w-24 md:max-w-44 max-h-44 contain"
+                src="/klatring.png"
+                alt=""
+              />
+              <img
+                className="max-w-24 md:max-w-44 max-h-44 contain"
+                src="/Fjellet.png"
+                alt=""
+              />
+            </div>
           </div>
 
-          <p className="my-4">
+          <p className="my-4 lg:text-lg">
             En annen viktig del av fritiden min er vennene mine som jeg bruker
             mye tid med.
           </p>
-          <div className="flex flex-wrap gap-2 md:justify-evenly md:gap-10">
-            <img className="md:w-24 md:h-32" src="Tusenfryd.png" alt="" />
-            <img src="Frisbee.png" alt="" />
-            <img src="Siste.png" alt="" />
+          <div className="flex flex-wrap gap-2 md:justify-evenly z-50 relative md:gap-10">
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="/verksted.png"
+              alt=""
+            />
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="Tusenfryd2.png"
+              alt=""
+            />
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="Frisbee2.png"
+              alt=""
+            />
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="skitur.png"
+              alt=""
+            />
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="/tur.png"
+              alt=""
+            />
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="/klatringg.png"
+              alt=""
+            />
+
+            <div className="flex max-w-full justify-between items-center mt-36 md:mt-28 z-0 absolute lg:hidden">
+              <img
+                className="max-w-20 max-h-20 md:max-w-44 md:max-h-44"
+                src="/ball.png"
+                alt=""
+              />
+              <img
+                className="max-w-20 max-h-20 md:max-w-44 md:max-h-44"
+                src="/ball.png"
+                alt=""
+              />
+              <img
+                className="max-w-20 max-h-20 md:max-w-44 md:max-h-44"
+                src="/ball.png"
+                alt=""
+              />
+            </div>
           </div>
-          <p className="my-4">
+          <p className="my-4 lg:text-lg">
             Når jeg kjenner på inspirasjon bruker jeg også tid på slappe av med
             å tegne eller male med forskjellige materialer.
           </p>
-          <div className="flex flex-wrap gap-2 md:justify-evenly md:flex-row md:gap-10 md md:bg-greenText">
-            <div className="w-full flex justify-between">
-              <img src="tegning.png" alt="" />
-              <img src="midtart.png" alt="" />
-            </div>
-            <div className="flex w-full justify-between">
-              <img className="cover" src="hallo.png" alt="" />
-              <img
-                className=" max-w-16 max-h-auto contain"
-                src="/hode.png"
-                alt=""
-              />
-              <img className=" max-w-16 max-h-auto" src="halv.png" alt="" />
-            </div>
-            <div className="grid grid-cols-2 gap-0">
-              <img src="/redart.png" alt="" />
-              <img src="/lastart.png" alt="" />
-            </div>
+          <div className="flex flex-wrap gap-2 md:justify-around md:flex-row md:gap-15 ">
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="tegning.png"
+              alt=""
+            />
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="midtart.png"
+              alt=""
+            />
+
+            <img
+              className="max-w-24 md:max-w-44 max-h-44 contain"
+              src="hallo.png"
+              alt=""
+            />
+            <img
+              className=" max-w-16 max-h-auto contain"
+              src="/hode.png"
+              alt=""
+            />
+            <img className=" max-w-16 max-h-auto" src="halv.png" alt="" />
+
+            <img src="/redart.png" alt="" />
+            <img src="/lastart.png" alt="" />
           </div>
         </section>
       )}

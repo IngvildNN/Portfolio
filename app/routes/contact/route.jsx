@@ -1,4 +1,16 @@
+import { useNavigate } from "@remix-run/react";
+
 export default function Contact() {
+  const navigate = useNavigate();
+
+  const behance = () => {
+    window.open("https://www.behance.net/ingvildnystein", "_blank");
+  };
+
+  const linkedin = () => {
+    window.open("https://www.linkedin.com/in/ingvildnystein/", "_blank");
+  };
+
   return (
     <div className="min-h-[100vh] mx-10 md:mx-44 xl:mx-72">
       <h1 className="mt-8 font-normal">Ta kontakt</h1>
@@ -10,19 +22,33 @@ export default function Contact() {
               <img className="w-7" src="/email-dar.png" alt="email" />{" "}
               ingvildnys[at]gmail.com
             </div>
-            <div className="flex flex-row items-center gap-2">
+            <div
+              className="flex flex-row items-center gap-2"
+              onClick={linkedin}
+              style={{ cursor: "pointer" }}
+            >
               <img className="w-7" src="/linked-dark.png" alt="linkedin" />{" "}
               LinkedIn
             </div>
             <h2 className="mt-8">Se mer prosjekter</h2>
             <div className="flex-row gap-2 flex">
-              <img className="w-7" src="/behance-dark.png" alt="" />
-              Behance
+              <div
+                className="flex-row gap-2 flex items-center"
+                onClick={behance}
+                style={{ cursor: "pointer" }}
+              >
+                <img className="w-7" src="/behance-dark.png" alt="" />
+                Behance
+              </div>
             </div>
           </div>
         </div>
         <div>
-          <img className=" w-full" src="/Fjellet-2.png" alt="" />
+          <img
+            className=" w-full md:w-auto md:h-72"
+            src="/Fjellet-2.png"
+            alt=""
+          />
         </div>
       </div>
       <div className="mt-16 flex justify-center items-center">

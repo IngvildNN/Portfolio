@@ -7,7 +7,7 @@ function Navbar() {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            `text-2xl ${isActive ? "underline" : ""}`
+            `text-xl md:text-2xl ${isActive ? "underline" : ""}`
           }
         >
           om meg
@@ -18,7 +18,7 @@ function Navbar() {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            `text-2xl ${isActive ? "underline" : ""}`
+            `text-xl md:text-2xl ${isActive ? "underline" : ""}`
           }
         >
           ta kontakt

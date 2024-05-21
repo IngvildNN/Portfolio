@@ -14,8 +14,8 @@ export const loader = async () => {
 
 export const meta = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Ingvild Netland Nystein" },
+    { name: "description", content: "Ingvild Netland Nystein portfolio" },
   ];
 };
 
@@ -27,11 +27,11 @@ export default function Index() {
         <img
           className="mix-blend-multiply max-h-24 md:min-h-40"
           src="/public/duotone3.jpg"
-          alt=""
+          alt="Ingvild"
         />
         <div className="flex flex-col">
           <p className="md:text-xl">Heisann!</p>
-          <p className="md:text-xl">
+          <p className="md:text-xl ">
             Jeg heter Ingvild og kommer fra Sandnes. Med fire år erfaring
             erfaring i fagområdet med et ett års studium i UX-Design på Noroff
             og en interaksjonsdesign bachelor på NTNU i Gjøvik
@@ -39,10 +39,10 @@ export default function Index() {
         </div>
       </div>
       <Experience />
-      <div className="mt-12 flex gap-3 justify-center md:justify-center md:gap-5 md:mx-44 md:text-xl">
-        <p>Innsiktsamling</p>
-        <p>Tjenestedesign</p>
-        <p>Brukertesting</p>
+      <div className="mt-12 flex gap-3 justify-center md:justify-center md:gap-5 md:mx-44 ">
+        <p className="md:text-xl lg:text-lg">Innsiktsamling</p>
+        <p className="md:text-xl lg:text-lg">Tjenestedesign</p>
+        <p className="md:text-xl lg:text-lg">Brukertesting</p>
       </div>
       <h2 className="font-normal text-center mt-12">Prosjekter</h2>
       <Posts posts={data} />
