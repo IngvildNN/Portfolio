@@ -40,6 +40,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
         <link rel="stylesheet" href="https://use.typekit.net/zoo2bwr.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className="bg-secondary">
         <Navbar />

@@ -10,6 +10,7 @@ export default {
         tertiary: "#5aa95d",
         imageBackground: "#cedfbe",
         greenText: "#205139",
+        footertext: "#CEDFBE",
       },
       BackgroundImage: {
         "footer-texture": "url('/public/footer-design.png')",

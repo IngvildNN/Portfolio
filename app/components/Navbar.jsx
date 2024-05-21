@@ -6,7 +6,9 @@ function Navbar() {
       <div className="mx-10 md:mx-44 xl:mx-72 w-full flex justify-between items-center">
         <NavLink
           to="/about"
-          className={({ isActive }) => (isActive ? "underline" : "")}
+          className={({ isActive }) =>
+            `text-2xl ${isActive ? "underline" : ""}`
+          }
         >
           om meg
         </NavLink>
@@ -15,7 +17,9 @@ function Navbar() {
         </NavLink>
         <NavLink
           to="/contact"
-          className={({ isActive }) => (isActive ? "underline" : "")}
+          className={({ isActive }) =>
+            `text-2xl ${isActive ? "underline" : ""}`
+          }
         >
           ta kontakt
         </NavLink>

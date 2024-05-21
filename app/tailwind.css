@@ -5,11 +5,13 @@
 h1 {
   font-size: 36px;
   font-weight: 999;
+  font-family: "Forum", serif;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 999;
+  font-family: "Forum", serif;
 }
 
 h3 {
@@ -19,6 +21,8 @@ h3 {
 
 p {
   font-size: 14px;
+  color: #173333;
+  font-family: "loos-light", sans-serif;
 }
 
 * {

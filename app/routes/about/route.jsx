@@ -9,7 +9,7 @@ export default function About() {
 
   return (
     <div className="max-w-full flex flex-col items-center mt-12 mx-10 md:mx-44 xl:mx-72 min-h-[100vh]">
-      <p className="text-xl mt-4 text-center min-w-full">
+      <p className="text-xl md:text-2xl mt-4 text-center min-w-full">
         Ingvild Netland Nystein
       </p>
       <div className="md:flex md:justify-between md:items-center md:gap-4 md:min-w-full ">
@@ -31,7 +31,7 @@ export default function About() {
           </div>
         </div>
         <div className="mt-8 md:max-w-[50%]">
-          <p>
+          <p className="md:text-xl">
             Jeg er en engasjert person som har drevet med kreative hobbyer og
             prosjekter så lenge jeg kan huske. Samlet har jeg 4 år med utdanning
             innenfor brukersentert design. Med både et årsstudium i UX-Design
@@ -189,19 +189,23 @@ export default function About() {
             å tegne eller male med forskjellige materialer.
           </p>
           <div className="flex flex-wrap gap-2 md:justify-evenly md:flex-row md:gap-10 md md:bg-greenText">
-            <img src="tegning.png" alt="" />
-            <img src="midtart.png" alt="" />
-            <img src="tegning2.png" alt="" />
-            <img
-              className="hidden md:block md:max-w-16 md:max-h-auto"
-              src="/hode.png"
-              alt=""
-            />
-            <img
-              className="hidden md:block md:max-w-16 md:max-h-auto"
-              src="hidden.png"
-              alt=""
-            />
+            <div className="w-full flex justify-between">
+              <img src="tegning.png" alt="" />
+              <img src="midtart.png" alt="" />
+            </div>
+            <div className="flex w-full justify-between">
+              <img className="cover" src="hallo.png" alt="" />
+              <img
+                className=" max-w-16 max-h-auto contain"
+                src="/hode.png"
+                alt=""
+              />
+              <img className=" max-w-16 max-h-auto" src="halv.png" alt="" />
+            </div>
+            <div className="grid grid-cols-2 gap-0">
+              <img src="/redart.png" alt="" />
+              <img src="/lastart.png" alt="" />
+            </div>
           </div>
         </section>
       )}

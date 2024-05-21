@@ -40,7 +40,7 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
         posts.map((post) => (
           <div
             id={post._id}
-            className={`post flex justify-center items-center h-fit flex-col w-full relative`}
+            className={`post flex justify-start items-center h-fit flex-col w-full relative`}
             key={post._id}
           >
             <div className="flex justify-start items-start w-full ">
@@ -84,7 +84,9 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
                 </>
               )} */}
             </div>
-            {post.description ? <p className="">{post.description}</p> : null}
+            <div className="flex justify-start items-start w-full ">
+              {post.description ? <p className="">{post.description}</p> : null}
+            </div>
           </div>
         ))
       ) : (
