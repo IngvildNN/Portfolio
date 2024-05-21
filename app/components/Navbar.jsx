@@ -2,7 +2,7 @@ import { NavLink } from "@remix-run/react";
 
 function Navbar() {
   return (
-    <div className="items-center justify-between min-w-[100vw] flex bg-primary text-secondary h-[10vh]">
+    <div className="items-center justify-between max-w-[100vw] flex bg-primary text-secondary h-[10vh]">
       <div className="mx-10 md:mx-44 xl:mx-72 w-full flex justify-between items-center">
         <NavLink
           to="/about"
