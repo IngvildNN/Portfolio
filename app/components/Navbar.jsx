@@ -1,26 +1,27 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink } from "@remix-run/react";
 
-export default function Navbar() {
-  const location = useLocation();
-  const { pathname } = location;
-
+function Navbar() {
   return (
     <div className="items-center justify-between min-w-[100vw] flex bg-primary text-secondary h-[10vh]">
       <div className="mx-10 md:mx-44 xl:mx-72 w-full flex justify-between items-center">
-        <a href="/about" className={pathname === "/about" ? "underline" : ""}>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "underline" : "")}
+        >
           om meg
-        </a>
-        <a href="/">
+        </NavLink>
+        <NavLink to="/">
           <img src="/public/logo.png" alt="logo" />
-        </a>
-        <a
-          href="/contact"
-          className={pathname === "/contact" ? "underline" : ""}
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? "underline" : "")}
         >
           ta kontakt
-        </a>
+        </NavLink>
       </div>
     </div>
   );
 }
+
+export default Navbar;

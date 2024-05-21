@@ -38,14 +38,21 @@ export default defineType({
         hotspot: true,
       },
     }),
+
     defineField({
-      name: 'pdfImage',
-      title: 'PDF image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'pdfImages',
+      title: 'PDF Images',
+      type: 'array',
+      of: [
+        {
+          type: 'image',
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
     }),
+
     defineField({
       name: 'pdfLink',
       title: 'PDFLink',
