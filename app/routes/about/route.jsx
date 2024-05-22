@@ -14,9 +14,9 @@ export default function About() {
       <div className="md:flex md:justify-between md:items-center md:gap-4 md:min-w-full ">
         <div className="flex justify-center gap-4 items-center">
           <div className="flex flex-col gap-4">
-            <img src="/Vector 15.png" alt="" />
-            <img src="/Vector 15.png" alt="" />
-            <img src="/Vector 15.png" alt="" />
+            <img src="/vector15.png" alt="" />
+            <img src="/vector15.png" alt="" />
+            <img src="/vector15.png" alt="" />
           </div>
           <img
             className="mt-4 md:w-full md:h-auto"
@@ -24,9 +24,9 @@ export default function About() {
             alt="Ingvild"
           />
           <div className="flex flex-col gap-4">
-            <img src="/Vector 15.png" alt="" />
-            <img src="/Vector 15.png" alt="" />
-            <img src="/Vector 15.png" alt="" />
+            <img src="/vector15.png" alt="" />
+            <img src="/vector15.png" alt="" />
+            <img src="/vector15.png" alt="" />
           </div>
         </div>
         <div className="mt-8 md:max-w-[50%]">
