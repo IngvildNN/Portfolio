@@ -52,7 +52,7 @@ function Navbar() {
                 ? "opacity-100"
                 : "opacity-0"
             }`}
-            src="/public/hov.png"
+            src="/hov.png"
             alt="logo"
           />
         </NavLink>

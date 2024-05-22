@@ -26,7 +26,7 @@ export default function Index() {
       <div className="flex mt-8 md:justify-between md:w-full md:flex md:gap-20 md:items-center -mx-6 ">
         <img
           className="mix-blend-multiply max-h-24 md:min-h-40"
-          src="/public/duotone3.jpg"
+          src="/duotone3.jpg"
           alt="Ingvild"
         />
         <div className="flex flex-col">

@@ -72,12 +72,12 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
               {activePost === post._id && (
                 <>
                   <img
-                    src="/public/gressirkel.png"
+                    src="/gressirkel.png"
                     alt=""
                     className="absolute opacity-[30%] top-[6rem] right-[1rem] w-20 h-20 transform translate-x-1/2 -translate-y-1/2"
                   />
                   <img
-                    src="/public/gressirkel.png"
+                    src="/gressirkel.png"
                     alt=""
                     className="absolute opacity-[30%] bottom-5 left-[-1.5rem]  w-20 h-20 transform translate-x-2/1 -translate-y-2/1"
                   />
