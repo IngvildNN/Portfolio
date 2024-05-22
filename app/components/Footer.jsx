@@ -24,7 +24,12 @@ export default function Footer() {
         </div>
 
         <hr className="border mt-2 border-imageBackground w-full" />
-        <div className="text-center p-2">Kodet av Håvard Larsen</div>
+        <div className="text-center p-2">
+          Designet av Ingvild Nystein, kodet av{" "}
+          <a className="underline" target="_blank" href="https://hlarsen.no/">
+            Håvard Larsen
+          </a>
+        </div>
       </div>
     </footer>
   );

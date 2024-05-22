@@ -155,7 +155,7 @@ export default function About() {
           </div>
           <div className="flex justify-between w-full gap-3 mt-4 md:mt-10">
             <div className="flex flex-col w-full justify-start text-[12px] md:text-[14px]">
-              <h3 className="font-normal">Indusrty skills</h3>
+              <h3 className="font-normal">Industry skills</h3>
               <ul className="flex flex-col gap-1">
                 <li>Innsiktsamling</li>
                 <li>Wireframing</li>
@@ -179,7 +179,7 @@ export default function About() {
       )}
 
       {visibleSection === "hobbies" && (
-        <section className="mb-4 px-44 w-full  ">
+        <section className="mb-4 md:px-44 w-full  ">
           <p className="my-4 lg:text-lg">
             På fritiden driver jeg med en rekke friluftsaktiviteter som
             randonée, slalom, klatring, buldring og tur.
@@ -215,7 +215,7 @@ export default function About() {
             En annen viktig del av fritiden min er vennene mine som jeg bruker
             mye tid med.
           </p>
-          <div className="flex flex-wrap gap-2 md:justify-evenly z-50 relative md:gap-10">
+          <div className="flex flex-wrap justify-between gap-2 md:justify-evenly z-50 relative md:gap-10">
             <img
               className="max-w-24 md:max-w-44 max-h-44 contain"
               src="/verksted.png"

@@ -69,20 +69,20 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
                   </div>
                 ) : null}
               </Link>
-              {/* {activePost === post._id && (
+              {activePost === post._id && (
                 <>
                   <img
                     src="/public/gressirkel.png"
                     alt=""
-                    className="absolute top-[6rem] right-[1rem] w-20 h-20 transform translate-x-1/2 -translate-y-1/2"
+                    className="absolute opacity-[30%] top-[6rem] right-[1rem] w-20 h-20 transform translate-x-1/2 -translate-y-1/2"
                   />
                   <img
                     src="/public/gressirkel.png"
                     alt=""
-                    className="absolute bottom-5 left-[-1.5rem]  w-20 h-20 transform translate-x-2/1 -translate-y-2/1"
+                    className="absolute opacity-[30%] bottom-5 left-[-1.5rem]  w-20 h-20 transform translate-x-2/1 -translate-y-2/1"
                   />
                 </>
-              )} */}
+              )}
             </div>
             <div className="flex justify-start items-start w-full ">
               {post.description ? <p className="">{post.description}</p> : null}

@@ -13,6 +13,7 @@ export default function Experience() {
           Bachelor i interaksjonsdesign
         </p>
       </div>
+      <img className="absolute opacity-[80%]" src="/bak.png" alt="" />
     </div>
   );
 }

@@ -18,28 +18,28 @@ export default function Contact() {
         <div className="flex-col justify-start ">
           <h2 className="text-xl text-footerText mb-3 pt-6">Kontakt meg!</h2>
           <div className="flex flex-col w-full  gap-2">
-            <div className="flex-row gap-2 flex">
+            <p className="flex-row gap-2 flex">
               <img className="w-7" src="/email-dar.png" alt="email" />{" "}
               ingvildnys[at]gmail.com
-            </div>
-            <div
+            </p>
+            <p
               className="flex flex-row items-center gap-2"
               onClick={linkedin}
               style={{ cursor: "pointer" }}
             >
               <img className="w-7" src="/linked-dark.png" alt="linkedin" />{" "}
               LinkedIn
-            </div>
+            </p>
             <h2 className="mt-8">Se mer prosjekter</h2>
             <div className="flex-row gap-2 flex">
-              <div
+              <p
                 className="flex-row gap-2 flex items-center"
                 onClick={behance}
                 style={{ cursor: "pointer" }}
               >
                 <img className="w-7" src="/behance-dark.png" alt="" />
                 Behance
-              </div>
+              </p>
             </div>
           </div>
         </div>

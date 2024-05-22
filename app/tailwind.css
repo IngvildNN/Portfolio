@@ -4,13 +4,13 @@
 
 h1 {
   font-size: 36px;
-  font-weight: 999;
+  font-weight: 500;
   font-family: "Forum", serif;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 999;
+  font-weight: 500;
   font-family: "Forum", serif;
 }
 
@@ -25,6 +25,15 @@ p {
   font-family: "loos-light", sans-serif;
 }
 
+.hallo {
+  font-family: "loos-light", sans-serif;
+}
+
 * {
   font-family: "loos-normal", sans-serif;
+}
+
+/* On hover, show the hov-logo */
+.logo:hover + .hov-logo {
+  opacity: 1;
 }
