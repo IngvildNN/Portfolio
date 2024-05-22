@@ -19,6 +19,7 @@ export const meta = () => {
   ];
 };
 
+console.log("hello");
 export default function Index() {
   const { data } = useLoaderData();
   return (

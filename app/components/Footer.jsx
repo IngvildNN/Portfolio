@@ -3,7 +3,7 @@ export default function Footer() {
     window.open("https://www.linkedin.com/in/ingvildnystein/", "_blank");
   };
   return (
-    <footer className="min-w-full bg-[url('/public/footer-design.png')]  text-imageBackground min-h-[10vh]  ">
+    <footer className="min-w-full bg-[url('/footer-design.png')]  text-imageBackground min-h-[10vh]  ">
       <div className="mx-10 md:mx-44 xl:mx-72 flex-col justify-start ">
         <div className="text-xl text-footerText pt-6">Kontakt meg!</div>
         <div className="flex flex-col w-full mt-4  gap-5">
