@@ -17,7 +17,7 @@ import Footer from "./components/Footer";
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
-const LiveVisualEditing = lazy(() => import("~/components/LiveVisualEditing"));
+// const LiveVisualEditing = lazy(() => import("~/components/LiveVisualEditing"));
 
 export const loader = () => {
   return json({
@@ -57,9 +57,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           }}
         />
         {ENV.SANITY_STUDIO_STEGA_ENABLED ? (
-          <Suspense>
-            <LiveVisualEditing />
-          </Suspense>
+          <Suspense>{/* <LiveVisualEditing /> */}</Suspense>
         ) : null}
         <Scripts />
         <LiveReload />
