@@ -156,7 +156,7 @@ export default function About() {
           <div className="flex justify-between w-full gap-3 mt-4 md:mt-10">
             <div className="flex flex-col w-full justify-start text-[12px] md:text-[14px]">
               <h3 className="font-normal">Industry skills</h3>
-              <ul className="flex flex-col gap-1">
+              <ul className="flex flex-col gap-1 custom-list">
                 <li>Innsiktsamling</li>
                 <li>Wireframing</li>
                 <li>Informasjonsarkitektur</li>
@@ -167,7 +167,7 @@ export default function About() {
             </div>
             <div className="flex flex-col w-full justify-start text-[12px] md:text-[14px]">
               <h3 className="font-normal">Personlige ferdigheter</h3>
-              <ul className="flex flex-col gap-1">
+              <ul className="flex flex-col gap-1 custom-list">
                 <li>Arbeidsstruktur</li>
                 <li>Glad i gruppearbeid</li>
                 <li>Organisering av arrangementer</li>

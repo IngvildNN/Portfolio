@@ -37,3 +37,11 @@ p {
 .logo:hover + .hov-logo {
   opacity: 1;
 }
+
+.custom-list {
+  list-style-type: disc; /* Default bullet type */
+}
+
+.custom-list li::marker {
+  color: green; /* Changes the color of the bullet */
+}

@@ -11,6 +11,8 @@ export default {
         imageBackground: "#cedfbe",
         greenText: "#205139",
         footertext: "#CEDFBE",
+        darkGreen: "#197675",
+        darkGreenText: "#205139",
       },
       BackgroundImage: {
         "footer-texture": "url('/public/footer-design.png')",
